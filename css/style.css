@@ -4,15 +4,53 @@
   box-sizing: border-box;
 }
 .grid-container {
-  width: 1150px;
-  height: 600px;
-  padding: 10px;
-  margin: 60px auto;
-  border: 1px solid;
+  padding: 20px;
   display: grid;
   grid-gap: 10px;
+  margin: 80px auto;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: 5fr 2fr 3fr 2fr;
+  grid-template-rows: repeat(3, 150px);
 }
 .grid-item {
-  border: 1px solid;
-  background-color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.grid-container .grid-item:nth-child(1) {
+  background: url(../images/img1.jpg) no-repeat center;
+  background-size: cover;
+  grid-row: 1 / span 3;
+}
+.grid-container .grid-item:nth-child(2) {
+  background: url(../images/img2.jpg) no-repeat center;
+  background-size: cover;
+}
+.grid-container .grid-item:nth-child(3) {
+  background: url(../images/img3.jpg) no-repeat center;
+  background-size: cover;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+.grid-container .grid-item:nth-child(4) {
+  background: url(../images/img4.jpg) no-repeat center;
+  background-size: cover;
+}
+.grid-container .grid-item:nth-child(5) {
+  background: url(../images/img5.jpg) no-repeat center;
+  background-size: cover;
+  grid-row: 2 / span 2;
+}
+.grid-container .grid-item:nth-child(6) {
+  background: url(../images/img6.jpg) no-repeat center;
+  background-size: cover;
+}
+.grid-container .grid-item:nth-child(7) {
+  background: url(../images/img7.jpg) no-repeat center;
+  background-size: cover;
+}
+.grid-container .grid-item:nth-child(8) {
+  background: url(../images/img8.jpg) no-repeat center;
+  background-size: cover;
 }
